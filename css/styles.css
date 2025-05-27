@@ -1,0 +1,44 @@
+@import url("./reset.css");
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  header,
+  footer {
+    background-color: purple;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .main {
+    display: flex;
+    flex-grow: 1;
+  }
+  
+  .articles {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+  }
+  
+  article {
+    background-color: pink;
+    padding: 20px;
+    margin: 5px;
+  }
+  
+  aside {
+    background-color: blue;
+    flex: 1;
+    padding: 20px;
+    margin: 5px;
+  }
+  
+  footer {
+    background-color: orange;
+    text-align: center;
+    padding: 10px;
+  }

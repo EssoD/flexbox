@@ -1,4 +1,4 @@
-Basic Reset to remove default margins, paddings, and other inconsistencies
+/* Basic Reset to remove default margins, paddings, and other inconsistencies */
 *,
 *::before,
 *::after {
@@ -71,62 +71,5 @@ body {
     * {
         animation: none;
         transition: none;
-    }
-}
-
-.grid-container {
-    display: grid;
-    grid-template-areas: 
-        "header header header"
-        "main main sidebar"
-        "footer footer footer";
-    grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: auto 1fr auto;
-    gap: 16px; 
-    padding: 16px; 
-}
-
-.header {
-    grid-area: header;
-    background-color: pink;
-    padding: 16px;
-    text-align: center;
-}
-
-.main {
-    grid-area: main;
-    background-color:grey;
-    padding: 16px;
-}
-.article {
-    background-color: purple;
-    color: white;
-    margin: 10px 0;
-    padding: 20px;
-    margin: auto; 
-    text-align: center; 
-
-}
-.footer {
-    grid-area: footer;
-    background-color: goldenrod;
-    padding: 16px;
-    text-align: center;
-}
-.aside { 
-    grid-area: aside; 
-    background-color: #3498db;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-@media (max-width: 768px) {
-    .grid-container {
-        grid-template-areas:
-            "header"
-            "main"
-            "aside"
-            "footer";
-        grid-template-columns: 1fr;
     }
 }
